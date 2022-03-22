@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="dark-mode">
+    <div id="mode-toggle" class="page-dark">
+      <i class="bx bx-sun"></i>
+      <!-- <i class="bx bx-moon"></i> -->
+    </div>
+    <div class="container">
+      <div class="password__heading-box">
+        <h1 class="password-heading">
+          generate a <span>random password</span>
+        </h1>
+        <p class="password-text">Never use an insecure password again</p>
+        <form class="password__form">
+          <label for="password-length">Password length</label>
+          <input
+            type="number"
+            name="password-length"
+            id="password-length"
+            min="12"
+            max="24"
+            placeholder="12"
+          />
+          <p class="password-length-details">
+            (min-length: 12 and max-length: 24)
+          </p>
+          <button class="btn">
+            <span><i class="bx bxs-key"></i></span>Generate passwords
+          </button>
+        </form>
+      </div>
+
+      <div class="passwords__container">
+        <p class="password">
+          <span class="password-dots"
+            ><i class="bx bx-dots-horizontal-rounded"></i
+          ></span>
+        </p>
+        <p class="password">
+          <span class="password-dots"
+            ><i class="bx bx-dots-horizontal-rounded"></i
+          ></span>
+        </p>
+        <p class="password">
+          <span class="password-dots"
+            ><i class="bx bx-dots-horizontal-rounded"></i
+          ></span>
+        </p>
+        <p class="password">
+          <span class="password-dots"
+            ><i class="bx bx-dots-horizontal-rounded"></i
+          ></span>
+        </p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
